@@ -201,7 +201,7 @@ contract MoonbirdsSploit is IERC721Receiver, Ownable {
 
         require(
             MOONBIRDS.ownerOf(tokenId) == msg.sender,
-            "Moonbirds: ownly owner"
+            "Moonbirds: only owner"
         );
 
         bool isApproved = (MOONBIRDS.isApprovedForAll(
