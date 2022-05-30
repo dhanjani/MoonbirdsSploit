@@ -12,8 +12,8 @@ It has not been audited and as such there can be no assurance it will work as in
 loss of transmitted information or loss of funds. Nitesh Dhanjani is not liable for any of the foregoing.
 Users should proceed with caution and use at their own risk.*/
 
-//This contract exploits a reentrancy condition in the MOONBIRDS contract to purchase 'nested' birds that are listed on LooksRare
-//The MOONBIRDS project issues awards and airdrops to birds that are nested
+//This contract exploits a reentrancy condition in the MOONBIRDS [https://www.moonbirds.xyz] contract to purchase 'nested' birds 
+//that are listed on LooksRare. The MOONBIRDS project issues awards and airdrops to birds that are nested
 //Unnesting a bird causes it to lose it's current "streak"
 //So nested birds are more valuable, but they are not allowed to transfer when in nested state
 //This contract is a proof of concept on how to exploit the reentrancy condition to get around the protection mechanism in the MOONBIRDS contract
