@@ -222,7 +222,7 @@ contract MoonbirdsSploit is IERC721Receiver, Ownable {
         (isNesting, , ) = MOONBIRDS.nestingPeriod(tokenId);
         require(!isNesting);
 
-        //could check to make sure the target bird in purcahseOrder is nested, otherwise what's the point?
+        //could check to make sure the target bird in purchaseOrder is nested, otherwise what's the point?
         //but not implementing the check because everything should still go through even if it's not nested
 
         //call safeTransferFrom on the Moonbirds contract to send the bird from the msg.sender to this contract
