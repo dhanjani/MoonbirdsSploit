@@ -19,7 +19,7 @@ Users should proceed with caution and use at their own risk.*/
 //This contract is a proof of concept on how to exploit the reentrancy condition to get around the protection mechanism in the MOONBIRDS contract
 //The safeTransferWhileNesting function sets the value of nestingTransfer to 2 in the MOONBIRDS contract
 //As long as nestingTransfer is set to 2, transfers are allowed
-//When safeTransferWhileNesting is called to send a bird to a contract (not a regular wallet), the _transfer function
+//When safeTransferWhileNesting is called to send a bird to a contract (not a regular wallet), the safeTransferFrom function
 //checks to see if the contract implements IERC721Receiver (which this contract does) and in turn calls back the onERC721Received function
 //on the destination contract which we have implemented. In our onERC721Received, we make the purchase for the target nested bird because we know
 //that nestingTransfer is still 2 and so it will go through.
